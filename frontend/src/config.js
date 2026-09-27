@@ -3,10 +3,18 @@ const getApiBaseUrl = () => {
   if (import.meta.env.VITE_API_URL) {
     return import.meta.env.VITE_API_URL;
   }
-  
-  // Em dispositivo mobile com Capacitor ou rede local, pode-se apontar para o IP da máquina
-  // Por padrão usa a porta 8080 do backend Spring Boot
-  return 'http://localhost:8080';
+
+  if (typeof window !== 'undefined' && window.location && window.location.hostname) {
+    // Se acessado no navegador local do computador
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      return 'http://localhost:8080';
+    }
+    // Se acessado pelo navegador do celular na rede Wi-Fi
+    return `http://${window.location.hostname}:8080`;
+  }
+
+  // Endereço fixo do servidor na rede para o aplicativo Android (Capacitor)
+  return 'http://10.0.0.6:8080';
 };
 
 export const API_URL = getApiBaseUrl();
