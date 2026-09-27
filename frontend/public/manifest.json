@@ -1,18 +1,18 @@
 {
-  "short_name": "Compra Coletiva",
-  "name": "Comabel Compra Coletiva",
+  "short_name": "Desconto do Dia",
+  "name": "Desconto do Dia - Compra Coletiva",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/logo.svg",
       "sizes": "192x192 512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ],
   "start_url": "/",
-  "background_color": "#0052A5",
-  "theme_color": "#0052A5",
+  "background_color": "#0D0618",
+  "theme_color": "#0D0618",
   "display": "standalone",
   "orientation": "portrait",
-  "description": "Aplicativo de Compras Coletivas para colaboradores da Comabel"
+  "description": "Aplicativo de Compras Coletivas e Fardos com Desconto - Desconto do Dia"
 }

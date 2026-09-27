@@ -1,6 +1,6 @@
 {
-  "appId": "com.comabel.compracoletiva",
-  "appName": "Compra Coletiva Comabel",
+  "appId": "com.descontododia.compracoletiva",
+  "appName": "Desconto do Dia",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "server": {

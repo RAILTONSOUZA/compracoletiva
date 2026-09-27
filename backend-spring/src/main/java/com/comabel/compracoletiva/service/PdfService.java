@@ -58,7 +58,7 @@ public class PdfService {
 
             // Título
             Font fontTitle = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16, BLUE_COMABEL);
-            Paragraph title = new Paragraph("COMABEL - PEDIDO GERAL DE COMPRAS (ESTOQUE)", fontTitle);
+            Paragraph title = new Paragraph("DESCONTO DO DIA - PEDIDO GERAL DE COMPRAS (ESTOQUE)", fontTitle);
             title.setAlignment(Element.ALIGN_CENTER);
             doc.add(title);
             doc.add(new Paragraph(" "));
@@ -167,7 +167,7 @@ public class PdfService {
             PdfWriter.getInstance(doc, out);
             doc.open();
 
-            Paragraph title = new Paragraph("COMABEL - COMPROVANTE DE COMPRA COLETIVA", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16, BLUE_COMABEL));
+            Paragraph title = new Paragraph("DESCONTO DO DIA - COMPROVANTE DE COMPRA COLETIVA", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16, BLUE_COMABEL));
             title.setAlignment(Element.ALIGN_CENTER);
             doc.add(title);
             doc.add(new Paragraph(" "));

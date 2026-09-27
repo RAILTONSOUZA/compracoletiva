@@ -247,24 +247,24 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-50 font-sans">
       
-      {/* HEADER DA COMABEL */}
-      <header className="bg-comabel-blue text-white shadow-md border-b-4 border-comabel-red">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      {/* HEADER DESCONTO DO DIA */}
+      <header className="bg-slate-950 text-white shadow-md border-b-4 border-[#6BBF4E]">
+        <div className="max-w-6xl mx-auto px-6 py-3.5 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex items-center gap-3">
-            <div className="bg-white p-2 rounded-xl shadow-sm">
-              <ShoppingBag className="text-comabel-blue" size={24} />
+            <div className="bg-[#0D0618] p-1.5 rounded-xl border border-[#6BBF4E]/40 shadow-sm flex items-center justify-center">
+              <img src="/logo.svg" alt="Desconto do Dia" className="h-11 w-auto" />
             </div>
             <div>
-              <h1 className="text-xl font-black leading-tight tracking-wide">COMABEL</h1>
-              <p className="text-xs text-blue-100">Atacado Coletivo</p>
+              <h1 className="text-xl font-black leading-tight tracking-wide text-white">DESCONTO DO DIA</h1>
+              <p className="text-xs text-[#6BBF4E] font-bold">Compra Coletiva & Atacado Inteligente</p>
             </div>
           </div>
 
-          <nav className="flex bg-comabel-blueDark p-1 rounded-xl">
+          <nav className="flex bg-slate-900 p-1 rounded-xl border border-slate-800">
             <button
               onClick={() => setTelaAtiva('comprar')}
               className={`flex items-center gap-2 px-5 py-2 rounded-lg font-bold text-sm transition-all ${
-                telaAtiva === 'comprar' ? 'bg-white text-comabel-blue shadow-sm' : 'text-blue-100 hover:text-white'
+                telaAtiva === 'comprar' ? 'bg-[#6BBF4E] text-slate-950 shadow-sm' : 'text-slate-300 hover:text-white'
               }`}
             >
               <Users size={18} /> Área de Ofertas
@@ -273,7 +273,7 @@ export default function App() {
             <button
               onClick={() => setTelaAtiva('admin')}
               className={`flex items-center gap-2 px-5 py-2 rounded-lg font-bold text-sm transition-all ${
-                telaAtiva === 'admin' ? 'bg-comabel-red text-white shadow-sm' : 'text-blue-100 hover:text-white'
+                telaAtiva === 'admin' ? 'bg-[#6C3FC4] text-white shadow-sm' : 'text-slate-300 hover:text-white'
               }`}
             >
               <PlusCircle size={18} /> Painel Admin
