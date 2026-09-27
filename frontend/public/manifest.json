@@ -1,0 +1,18 @@
+{
+  "short_name": "Compra Coletiva",
+  "name": "Comabel Compra Coletiva",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0052A5",
+  "theme_color": "#0052A5",
+  "display": "standalone",
+  "orientation": "portrait",
+  "description": "Aplicativo de Compras Coletivas para colaboradores da Comabel"
+}

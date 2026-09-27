@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Compra Coletiva Comabel</string>
+    <string name="title_activity_main">Compra Coletiva Comabel</string>
+    <string name="package_name">com.comabel.compracoletiva</string>
+    <string name="custom_url_scheme">com.comabel.compracoletiva</string>
+</resources>

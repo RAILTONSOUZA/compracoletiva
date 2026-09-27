@@ -1,0 +1,10 @@
+{
+  "appId": "com.comabel.compracoletiva",
+  "appName": "Compra Coletiva Comabel",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

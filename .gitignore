@@ -1,0 +1,33 @@
+# Maven & Java
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+*.class
+
+# Banco de dados local
+compra_coletiva_db*
+*.db
+backend/compras_coletivas.db
+
+# Segredos e Chaves de API
+*credentials.json
+*client_secret*.json
+*.env
+
+# Node & Frontend
+**/node_modules/
+**/dist/
+frontend/.oxlintrc.json
+
+# Android Studio & Gradle
+frontend/android/.gradle/
+frontend/android/app/build/
+frontend/android/build/
+frontend/android/local.properties
+frontend/android/.idea/
+
+# IDEs e OS
+.idea/
+.vscode/
+*.iml
+*.DS_Store
+Thumbs.db
