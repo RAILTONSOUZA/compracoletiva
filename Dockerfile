@@ -1,10 +1,15 @@
-# Dockerfile na raiz do repositório para garantir deploy automático no Render/Railway
+# Dockerfile na raiz do repositório
 FROM eclipse-temurin:17-jdk-jammy AS build
 WORKDIR /app
 
 # Copia os arquivos do Maven e pom.xml
 COPY backend-spring/pom.xml backend-spring/mvnw ./
 COPY backend-spring/.mvn ./.mvn
+
+# Dá permissão de execução ao mvnw
+RUN chmod +x ./mvnw
+
+# Resolve dependências
 RUN ./mvnw dependency:resolve
 
 # Copia o código fonte e as planilhas do catálogo

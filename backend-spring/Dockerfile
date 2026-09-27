@@ -2,9 +2,14 @@
 FROM eclipse-temurin:17-jdk-jammy AS build
 WORKDIR /app
 
-# Copia os arquivos do Maven e pom.xml para aproveitar o cache
+# Copia os arquivos do Maven e pom.xml
 COPY pom.xml mvnw ./
 COPY .mvn .mvn
+
+# Dá permissão de execução ao mvnw
+RUN chmod +x ./mvnw
+
+# Resolve dependências
 RUN ./mvnw dependency:resolve
 
 # Copia o código fonte e as planilhas do catálogo
